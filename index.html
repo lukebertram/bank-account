@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <meta charset="utf-8">
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus Bank</h1>
+        <h3>Not Federally Insured</h3>
+      </div>
+      <h3>Welcome To Your Bank</h3>
+      <div class="row">
+        <div class="col-lg-6 form1">
+          <h4>Register Your Account</h4>
+          <form id="newAccount">
+            <div class="form-group">
+              <label for="newAccountName">Name</label>
+              <input type="text" class="form-control" id="newAccountName">
+            </div>
+            <div class="form-group">
+              <label for="newAccountDeposit">Initial Deposit</label>
+              <input type="text" class="form-control" id="newAccountDeposit">
+            </div>
+            <button type="submit" class="btn">Give Us Your Money</button>
+          </form>
+        </div>
+        <div class="col-lg-6 form2">
+          <h4> Deposit/Withdraw Fun(ds)</h4>
+          <form id="withDep">
+            <div class="form-group">
+              <label for="withdraw">Withdraw</label>
+              <input type="text" class="form-control" id="withdraw">
+            </div>
+            <div class="form-group">
+              <label for="deposit">Deposit</label>
+              <input type="text" class="form-control" id="deposit">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <h3 class="form2">Welcome Back, <span id="name"></span>.</h3>
+      <h4>Your Balance:</h4>
+      <h5><span id="balance"></span></h5>
+    </div>
+  </body>
+</html>
